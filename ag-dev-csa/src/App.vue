@@ -1,11 +1,14 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import SectionHeader from './components/SectionHeader.vue';
+
+</script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <SectionHeader />
+  <main>
+    <RouterView />
+    <!-- O ROUTERVIEW VAI COLOCAR O VIEW DENTRO DO CÓDIGO -->
+  </main>
 </template>
 
 <style scoped></style>

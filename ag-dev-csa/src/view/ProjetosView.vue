@@ -1,0 +1,17 @@
+<script setup lang="ts">
+import { useProjetoStore } from '@/stores/useProjetoStore';
+const projetoStore = useProjetoStore()
+</script>
+
+<template>
+    <article>
+        <h2>PROJETOS</h2>
+        <ul>
+            <li v-for="proj in projetoStore.projetos" :key="proj.id">
+                {{ proj.nome }} - {{ proj.descricao }} <br />
+                [ {{ proj.status }}]
+            </li>
+    
+        </ul>
+    </article>
+</template>
