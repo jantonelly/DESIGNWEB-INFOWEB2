@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import RickAndMortyView from '@/views/RickAndMortyView.vue'
+import EstadosView from '@/views/EstadosView.vue'
 
 
 const router = createRouter({
@@ -9,6 +10,11 @@ const router = createRouter({
       path: '/',
       name: 'rickandmorty',
       component: RickAndMortyView
+    },
+    {
+    path: '/estados',
+    name: 'estados',
+    component: EstadosView
     }
   ],
 })
